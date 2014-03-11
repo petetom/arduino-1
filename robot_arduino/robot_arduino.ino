@@ -110,7 +110,7 @@ void loop()
           int16_t raw = (data[1] << 8) | data[0];
           raw = raw << 3;
           c1 = (float)raw/16.0;
-          f1 = c2 * 1.8 + 32.0;
+          f1 = c1 * 1.8 + 32.0;
           t_ary[0] = byte(int(f1));
           conv_0 = 0;                // reset flag to start new conversion
          }
